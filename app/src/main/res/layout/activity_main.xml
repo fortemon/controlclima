@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sitesas.controlclima.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/frameLayout"
+        android:background="#6bb8ff"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today, June 19"
+            android:id="@+id/fecha"
+            android:layout_gravity="left|top"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20º"
+            android:id="@+id/temperatura_actual"
+            android:layout_gravity="left|center_vertical"
+            android:textSize="50dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13º"
+            android:id="@+id/temperatura_proxima"
+            android:layout_gravity="left|bottom"
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:id="@+id/estado_clima"
+            android:layout_gravity="bottom|right"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp" />
+
+        <ImageView
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:id="@+id/image_clima"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sun"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+</RelativeLayout>
